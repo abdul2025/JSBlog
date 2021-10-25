@@ -39,7 +39,6 @@
     display: grid;
     width: 100%;
     justify-items: center;
-    grid-gap: 100px;
 }
 
 .str1 {
@@ -120,3 +119,5 @@
     margin-right: 40px;
     margin-left: 40px;
 }
+
+

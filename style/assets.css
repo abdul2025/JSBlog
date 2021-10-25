@@ -525,6 +525,15 @@ li a {
 	.guid-question {
 		width: 200px;
 	}
+	.headpic {
+		max-height: 150px;
+	}
+	.output {
+		width: 100% !important;
+	}
+	.str-tit {
+		font-size: 1.2em !important;
+	}
 }
 /***********************AMIMATION*/
 
