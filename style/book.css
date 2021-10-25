@@ -1,0 +1,128 @@
+:root {
+    --yellow: #ffc600;
+}
+
+h2 {
+    font-size: 70px;
+    font-style: italic;
+    font-weight: 100;
+    margin: 0;
+    color: #444;
+    font-family: Cambria, Cochin, Georgia, 'Times New Roman', Times, serif;
+}
+
+h4 {
+    margin-top: 70px;
+}
+
+p {
+    line-height: 1.8;
+    font-family: Cambria, Cochin, Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+a {
+    color: black;
+    text-decoration: underline wavy var(--yellow);
+}
+
+
+/***HELLO WORLD Edits***/
+
+.hello-world {
+    left: 60px;
+    width: 40%;
+}
+
+.hello-world-tital {
+    font-size: 33px;
+}
+
+.hello-world-catr a {
+    padding: 5px;
+}
+
+.hello-world-catr a::after,
+.hello-world-catr a::before {
+    position: absolute;
+    display: block;
+    top: 0;
+    width: 0;
+    height: 0;
+    content: "";
+}
+
+.hello-world-catr a::before {
+    left: -8px;
+    border-top: 27px solid transparent;
+    border-right: 9px solid #f3f3f3;
+    border-bottom: 0 solid transparent;
+}
+
+.hello-world-catr a::after {
+    right: -8px;
+    border-bottom: 29px solid transparent;
+    border-top: 0 solid transparent;
+    border-left: 9px solid #f3f3f3;
+}
+
+
+/***HELLO WORLD Edits END***/
+
+.post {
+    display: grid;
+    max-width: 1000px;
+    margin: 200px auto;
+    grid-gap: 10px 50px;
+    grid-template-columns: 3fr 12fr 5fr;
+}
+
+.post>* {
+    grid-column: 2 / -2;
+}
+
+.post>figure {
+    height: 90%;
+    width: 80%;
+    margin: 50px;
+    padding-bottom: 50px;
+}
+
+figcaption {
+    font-size: 10px;
+}
+
+.post>blockquote {
+    grid-column: 1 / -1;
+    font-size: 60px;
+    font-style: italic;
+    text-align: center;
+    margin: 30px;
+}
+
+.tip {
+    background: #FAFAFA;
+    padding: 10px;
+    grid-row: span 5;
+    align-self: start;
+}
+
+.tip-left {
+    grid-column: 1 / span 1;
+    text-align: right;
+    border-right: 2px solid var(--yellow);
+}
+
+.tip-right {
+    grid-column: span 1 / -1;
+    border-left: 2px solid var(--yellow);
+}
+
+.brian {
+    color: var( --golden-yellow);
+}

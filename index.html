@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./style/assets.css">
+	<link rel="stylesheet" href="./style/string.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Strings Methods JS</title>
+
+</head>
+
+<body>
+	<div class="side-bar">
+		<div class="logo-sidebar">
+			<a href="./index.html" class="logo-img"><img src="./IMGS/logo.png" alt="JSblog" /></a>
+		</div>
+		
+		<div class="questions">
+			<ul class="question-where-here">
+				<li>
+					<a href="file:///C:/Users/wahbi/Downloads/eproject/blog/whereaminow.html">
+						Where am I <span class="dirty">NOW ?</span>
+					</a>
+				</li>
+				<li>
+					<a href="./books.html"> Hello <span class="dirty">World !!</span> </a>
+				</li>
+			</ul>
+		</div>
+		<nav class="nav-list" role="navigation">
+			<span class="line-w"></span>
+			<ul class="categories">
+				<li class="catego-tital">categories</li>
+				<li class="categorey">
+					<a href=""> html (0) </a>
+				</li>
+				<li class="categorey">
+					<a href="">css (0) </a>
+				</li>
+				<li class="categorey">
+					<a href="">javascript(0) </a>
+				</li>
+				<li class="categorey">
+					<a href="">books(1)</a>
+				</li>
+			</ul>
+			<ul class="very-dirty">
+				<li class="catego-tital">Latest articles</li>
+				<li class="categorey catego-dirty"><a href="">Upcoming</a></li>
+				<li class="categorey catego-dirty"><a href=""> Upcoming </a></li>
+			</ul>
+		</nav>
+	</div>
+	<div class="body-wrapper">
+		<header class="site-header" role="banner">
+			<div class="wrapper-side-bar">
+				<span id="side-bar-icon"><i class="fa fa-align-left"></i> </span>
+				<span id="close-side-bar"> <i class="fa fa-times"></i></span>
+
+			</div>
+			<div class="guid-question">
+				<ul class="top-site-questions">
+					<li><a href="./whereaminow.html"> Where am I <span class="dirty">NOW ?</span> </a></li>
+					<li><a href="./books.html"> Hello <span class="dirty">World </span> !!</a>
+					</li>
+					
+				</ul>
+			</div>
+			<div class="clock">
+				<div class="clock-face">
+					<div class="hand hour-hand"></div>
+					<div class="hand min-hand"></div>
+					<div class="hand second-hand"></div>
+				</div>
+
+			</div>
+
+			<div class="logo">
+				<a href="./index.html" class="logo-img"><img src="./IMGS/logo.png" alt="JSblog"></a>
+
+			</div>
+		</header>
+
+		<article class="post-1 post-2" id="post-2 ">
+			<div class="post-thumbnail" style="
+						background-image: url('https://getflywheel.com/layout/wp-content/uploads/2019/02/The_Best_Java_Script_Libraries_1800x500-1-1280x356.jpg');
+					"></div>
+			<a href="" class="post-link"></a>
+			<div class="post-thumbnail-header">
+				<div class="thumbnail-mate">
+					<span class="psot-catrgory">
+						<a href="">javascript</a>
+					</span>
+					<span class="post-time">2019.10.06</span>
+				</div>
+				<h1 class="post-thumbnail-tital">
+					<a href="">Srtings( ) Methods</a>
+				</h1>
+			</div>
+		</article>
+
+		<article class="strings-methods">
+			<div class="top-art">
+				<h3 class="tit-art">Essential JavaScript String Methods</h3>
+				<p class="header-art">
+					The 13 most important JavaScript functions for working with strings.
+					Index, slice, split, and trim your way through JS strings methods.
+				</p>
+				<img class="headpic" src="https://miro.medium.com/max/2250/1*tifNDBJM5QhgjZSTQYJR-Q.png" alt="" />
+			</div>
+			<div class="artcontent">
+				<div class="str1">
+					<div class="str-tit">
+						.length ___ Finding the length of the string
+					</div>
+					<p class="descrip-parag">
+						Length is a string property that is used to determine the length
+						of a string. Because length is a property of the String object, it
+						must be invoked through a particular instance of the String class.
+					</p>
+					<div class="output">
+						<input class="str-input length-inp" type="text" value="" placeholder="type A string" />
+						<button class="str-btn btn-length">try</button>
+						<div class="output-box">
+							<div class="demo">
+								input:
+							</div>
+							<div class="result">output:</div>
+						</div>
+					</div>
+				</div>
+				<div class="str1">
+					<div class="str-tit">.trim() ___ Removing white space</div>
+					<p class="descrip-parag">
+						The trim() function removes white space from the beginning and end
+						of a string
+					</p>
+					<div class="output">
+						<input class="str-input trim-inp" type="text" value="" placeholder="type A string" />
+						<button class="str-btn btn-trim">try</button>
+						<div class="output-box">
+							<div class="demo" id="demo1">
+								input:
+							</div>
+							<div class="result" id="result1">output:</div>
+						</div>
+					</div>
+				</div>
+				<div class="str1">
+					<div class="str-tit">
+						.includes() — Determine if string contains substring
+					</div>
+					<p class="descrip-parag">
+						The includes() function determines if a substring is contained in
+						a larger string and returns true or false. This has many
+						applications, but one common use-case is for string matching for
+						searching/parsing.
+					</p>
+					<div class="output">
+						<input class="str-input" id="incl-inp-str" type="text" value="" placeholder="type A string" />
+						<input class="str-input" id="incl-inp-term1" type="text" value=""
+							placeholder="search true/fales term" />
+						<input class="str-input" id="incl-inp-term2" type="text" value=""
+							placeholder="search true/fales term" />
+						<button class="str-btn btn-incl">try</button>
+						<div class="output-box">
+							<div class="demo" id="demo2">
+								input:
+							</div>
+							<div class="result" id="result2">output:</div>
+						</div>
+					</div>
+				</div>
+				<div class="str1">
+					<div class="str-tit">
+						.indexOf() — Finding the index of a substring
+					</div>
+					<p class="descrip-parag">
+						Before includes() was introduced to the JavaScript spec, indexOf()
+						was the primary way you would check if a substring existed in a
+						string. It is likely you will still see code that uses indexOf, so
+						understanding how it works is important. The function returns the
+						index of the substring within the string. If the substring is not
+						contained in the original string, it will return -1
+					</p>
+					<div class="output">
+						<input class="str-input" id="inx-inp-str" type="text" value="" placeholder="type A string" />
+						<input class="str-input" id="inx-inp-term1" type="text" value="" placeholder="search term1" />
+						<input class="str-input" id="inx-inp-term2" type="text" value="" placeholder="search term2" />
+						<button class="str-btn btn-inx">try</button>
+						<div class="output-box">
+							<div class="demo" id="demo3">
+								input:
+							</div>
+							<div class="result" id="result3">output:</div>
+						</div>
+					</div>
+				</div>
+				<div class="str1">
+					<div class="str-tit">
+						.toUpperCase() — Capitalizes entire string
+					</div>
+					<p class="descrip-parag">
+						The toUpperCase() function returns a string with all upper case
+						letters.
+					</p>
+					<div class="output">
+						<input class="str-input" id="cap-inp-str" type="text" value="" placeholder="type A string" />
+						<button class="str-btn btn-cap">try</button>
+						<div class="output-box">
+							<div class="demo" id="demo4">
+								input:
+							</div>
+							<div class="result" id="result4">output:</div>
+						</div>
+					</div>
+				</div>
+				<div class="str1">
+					<div class="str-tit">
+						.toLowerCase() — Lower cases entire string
+					</div>
+					<p class="descrip-parag">
+						The toLowerCase() function returns a string with all lower case
+						letters.
+					</p>
+					<div class="output">
+						<input class="str-input" id="low-inp-str" type="text" value="" placeholder="type A string" />
+						<button class="str-btn btn-low">try</button>
+						<div class="output-box">
+							<div class="demo" id="demo5">
+								input:
+							</div>
+							<div class="result" id="result5">output:</div>
+						</div>
+					</div>
+				</div>
+				<div class="str1">
+					<div class="str-tit">
+						.replace() — Replaces strings with new values
+					</div>
+					<p class="descrip-parag">
+						The replace() function is called on a string and will return a
+						string with a pattern replaced by a replacement string. It takes
+						either a regex or a string as the pattern. With a regex you can
+						globally replace all matches (using the g option), but with a
+						string it will only replace the first occurrence. In the example
+						below, you will notice that world is replaced only once in the
+						first call since it uses a string pattern.
+					</p>
+					<div class="output">
+						<input class="str-input" id="rep-inp-str" type="text" value="" placeholder="type A string" />
+						<input class="str-input" id="str-patt-inp-str" type="text" value=""
+							placeholder="type string pattern" />
+						<input class="str-input" id="regex-inp-str" type="text" value="" placeholder="regex pattern" />
+						<input class="str-input" id="replac-inp-str" type="text" value="" placeholder="replacement" />
+						<button class="str-btn btn-rep">try</button>
+						<div class="output-box">
+							<div class="demo" id="demo6">
+								input:
+							</div>
+							<div class="result" id="result6">output:</div>
+						</div>
+					</div>
+				</div>
+				<div class="str1">
+					<div class="str-tit">.slice() — Return a section of a string</div>
+					<p class="descrip-parag">
+						The slice() method will extract a section of a string based on the
+						index supplied and return it as a new string.
+					</p>
+					<div class="output">
+						<input class="str-input" id="sli1-inp-str" type="text" value="" placeholder="type A string1" />
+						<input class="str-input" id="sliceFrom-inp-str" type="number" value=""
+							placeholder="type number to slice from" />
+
+						<button class="str-btn btn-sli">try</button>
+						<div class="output-box">
+							<div class="demo" id="demo7">
+								input:
+							</div>
+							<div class="result" id="result7">output:</div>
+						</div>
+					</div>
+					<div class="str-tit">
+						Another example for .slice() — with indexOf method Return a
+						section of a string
+					</div>
+					<p class="descrip-parag">
+						This is useful when you know the structure of a string and want to
+						retrieve a certain portion, or it can be used with the indexOf
+						method which we learned earlier where you can find the index of
+						the first occurrence of a substring and use that as a reference
+						point for slicing..
+					</p>
+					<div class="output">
+						<input class="str-input" id="sli2-inp-str" type="text" value="" placeholder="type A string2" />
+						<input class="str-input" id="sli2-indexOF-inp-str" type="text" value=""
+							placeholder="where to start the slice" />
+
+						<button class="str-btn btn-sli2">try</button>
+						<div class="output-box">
+							<div class="demo" id="demo8">
+								input:
+							</div>
+							<div class="result" id="result8">output:</div>
+						</div>
+					</div>
+				</div>
+				<div class="str1">
+					<div class="str-tit">
+						.split() — Converts string into an array of strings
+					</div>
+					<p class="descrip-parag">
+						The split() method takes a separator which you want to split apart
+						the string on, and it returns an array of strings. This is useful
+						when you know your string uses a certain character to separate
+						data, or if you want to operate on specific substrings
+						individually.
+					</p>
+					<div class="output">
+						<input class="str-input" id="split-inp-str" type="text" value="" placeholder="type A string" />
+
+						<button class="str-btn btn-split">try</button>
+						<div class="output-box">
+							<div class="demo" id="demo9">
+								input:
+							</div>
+							<div class="result" id="result9">output:</div>
+						</div>
+					</div>
+				</div>
+				<div class="str1">
+					<div class="str-tit">
+						.repeat() — Repeats a string a specified number of times
+					</div>
+					<p class="descrip-parag">
+						The repeat() function returns a string consisting of the elements
+						of the object repeated the given number of times.
+					</p>
+					<div class="output">
+						<input class="str-input" id="repeat-inp-str" type="text" value="" placeholder="type A string" />
+						<input class="str-input" id="repeatNum-inp-str" type="number" value=""
+							placeholder="how many time to repeat" />
+
+						<button class="str-btn btn-repeat">try</button>
+						<div class="output-box">
+							<div class="demo" id="demo10">
+								input:
+							</div>
+							<div class="result" id="result10">output:</div>
+						</div>
+					</div>
+				</div>
+				😍
+				<div class="str1">
+					<div class="str-tit">
+						.startsWith() — determines whether a string starts with a specific
+						sequence of characters.
+					</div>
+					<p class="descrip-parag">
+						Because the startsWith() method is a method of the String object,
+						it must be invoked through a particular instance of the String
+						class. It returns true if the substring is found at the start of
+						string. Otherwise, it returns false.
+					</p>
+					<div class="output">
+						<input class="str-input" id="stWiht-inp-str" type="text" value="" placeholder="type A string" />
+						<input class="str-input" id="stWithU-inp-str" type="text" value=""
+							placeholder="type the beginning of your word" />
+
+						<button class="str-btn btn-stWith">try</button>
+						<div class="output-box">
+							<div class="demo" id="demo11">
+								input:
+							</div>
+							<div class="result" id="result11">output:</div>
+						</div>
+					</div>
+				</div>
+				<div class="str1">
+					<div class="str-tit">
+						.endsWith() — determines whether a string ends with a specific
+						sequence of characters.
+					</div>
+					<p class="descrip-parag">
+						Because the endsWith() method is a method of the String object, it
+						must be invoked through a particular instance of the String class.
+						It returns true if the substring is found at the end of string.
+						Otherwise, it returns false.
+					</p>
+					<div class="output">
+						<input class="str-input" id="endWiht-inp-str" type="text" value=""
+							placeholder="type A string" />
+						<input class="str-input" id="endWithU-inp-str" type="text" value=""
+							placeholder="type the ends of your word" />
+
+						<button class="str-btn btn-endWith">try</button>
+						<div class="output-box">
+							<div class="demo" id="demo12">
+								input:
+							</div>
+							<div class="result" id="result12">output:</div>
+						</div>
+					</div>
+				</div>
+				<div class="str1">
+					<div class="str-tit">
+						.toString() — is used with a number and converts the number to a
+						string.
+					</div>
+					<p class="descrip-parag">
+						It is used to return a string representing the specified number
+						object (BASE).
+					</p>
+					<div class="output">
+						<input class="str-input" id="toStr-inp-str" type="number" placeholder="any number" />
+						<input class="str-input" id="toStrB-inp-str" type="number"
+							placeholder="chose a base 2, 8, 16 or leave it empty" />
+
+						<button class="str-btn btn-toStr">try</button>
+						<div class="output-box">
+							<div class="demo" id="demo13">
+								input:
+							</div>
+							<div class="result" id="result13">output:</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</article>
+
+		<footer class="footer">
+			<div class="social-media">
+				<span class="media"><a href=""><i class="fa fa-twitter flip-vertical-fwd"></i></a></span>
+				<span class="media"><a href=""><i class="fa fa-github flip-vertical-fwd"></i></a></span>
+				<span class="media"><a href=""><i class="fa fa-linkedin flip-vertical-fwd"></i></a></span>
+				<span class="media"><a href=""><i class="fa fa-instagram flip-vertical-fwd"></i></a></span>
+			</div>
+			<div class="copyright">
+				<p>@2019 JSBLOG</p>
+			</div>
+		</footer>
+	</div>
+
+<script src="./index.js"></script>
+<script src="./js/script.js"></script>
+
+
+</body>
+
+</html>
